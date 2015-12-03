@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+	<title>Testseite A</title>
+	<ul>
+		<li>Home</li>
+		<li>About</li>
+	<style>
+	
+	form label {
+		width: 120px;
+		display: blook;
+		float: left;
+	}
+	#content1 {
+		 width: 45%;
+		 float:left;
+	
+		 padding: 20px;
+		 box-sizing: border-box;
+		 background-color: rgba(255, 255, 255, 0.5);
+		
+		
+	  }
+	  
+	   #content2 {
+		  width: 45%;
+		  float:left;
+		  background-color: #FFFFFF;
+		 padding: 20px;
+		  background-color: rgba(255, 255, 255, 0.5);
+		 margin-bottom: 50px;
+		 box-sizing: border-box;
+		  
+	  }
+	</style>
+	
+	<script>
+	//JavaScript Validierung 
+	
+	function istFertig(form)
+	{
+		var validierung = true;
+		
+		if(form.anrede.value == '')
+		{
+			alert("Bitte wählen Sie eine Anrede aus.");
+			validierung = false;
+		}
+		
+		if(form.vorname.value == '')
+		{
+			alert("Bitte geben Sie einen Vorname an.");
+			validierung = false;
+		}
+		
+		if(form.nachname.value == '')
+		{
+			alert("Bitte geben Sie einen Nachname an.");
+			validierung = false;
+		}
+		
+		if(form.strasse.value == '')
+		{
+			alert("Bitte geben Sie eine Strasse an.");
+			validierung = false;
+		}
+		
+		if(form.ort.value == '')
+		{
+			alert("Bitte geben Sie einen Ort an.");
+			validierung = false;
+		}
+		
+		if(form.plz.value == '')
+		{
+			alert("Bitte geben Sie eine PLZ an.");
+			validierung = false;
+		}
+		
+		if(form.mitteilung.value == '')
+		{
+			alert("Bitte geben Sie eine Mitteilung an.");
+			validierung = false;
+		}
+		
+		return validierung;
+	}
+		</script>
+</head>
+	<body>
+		<div id="header">
+		<img src="Basel.jpg" alt="Basel"width="100%" />
+		</div>
+		
+		<div id="content-wrapper">
+			<div id="content1">
+				<img src="Basel2.jpg" width="100%" height="450">		
+			</div>
+					<!--
+					Anrede (select), Vorname (input), Nachname (input), Strasse (input), Ort(input), 
+					PLZ(input), Mitteilung (textarea), Senden (Button)
+					-->
+	
+		<div id="errormessage">
+		<h1>Kontakt</h1>
+			<form name="einfachesformular" onSubmit="return istFertig(this);"  method="post">
+				<label> Anrede</label>
+				
+				<select name="anrede">
+					<option value="">Bitte w&auml;hlen</option>
+					<option value="Herr">Herr</option>
+					<option value="Frau">Frau</option>
+					<option value="An">An</option>
+				</select> 
+				<br />
+				<label> Vorname</label>
+				<input type="text" name="vorname" />
+				<br />
+				<label> Nachname</label>
+				<input type="text" name="nachname" />
+				<br />
+				<label> Strasse</label>
+				<input type="text" name="strasse" />
+				<br />
+				<label> Ort</label>
+				<input type="text" name="ort" />
+				<br />
+				<label> PLZ</label>
+				<input type="text" name="plz" />
+				<br />
+				<label> Vorname</label>
+				<input type="text" name="vorname" />
+				<br />
+				<br />
+				<label> Mitteilung</label>
+				<textarea name="mitteilung" rows="4" cols="50">
+					</textarea>
+					<br />
+					
+				<button type="submit" name="submit">Senden</button>
+			</form>
+		</div>
+				
+				<p>
+					Vom F&uuml;hrer der Gl&auml;ubigen, Umar ibn Al-Hattab, Allahs Wohlgefallen auf ihm, der gesagt hat: 
+					Ich h&ouml;rte Allahs Gesandten salla Allah u alihi wa sallam sagen:
+					Die Taten sind entsprechend den Absichten, und jedem Menschen (geb&uuml;hrt), was er beabsichtigt hat. 
+					Wer also seine Auswanderung um Allahs und Seines Gesandten willen unternahm, 
+					dessen Auswanderung war f&uuml;r Allah und Seinen Gesandten, und wer seine Auswanderung um der Welt willen unternahm, 
+					sie zu erlangen, oder wegen einer Frau, sie zu heiraten, dessen Auswanderung war f&uuml;r das, dessentwegen er auswanderte.
+				</p>
+			</div>
+			<div id="content2">
+				<p>
+					Abu  Abdur-Rahmaan Abdullah ibn Mas&prime;ud &umml;berlieferte, dass der Gesandte Gottes und  er  ist  der Wahrhaftige, 
+					der Glaubhafte sagte:
+					&quot;Wahrlich, die Sch&ouml;pfung  eines  jeden  von  euch  wird  im  Bauch  seiner  Mutter  gesammelt. Vierzig  Tage  
+					als  ein  Samentropfen[nutfah],  dann  ist  er  ebenso  lange  ein  Blutklumpen[alaqah],  dann  ist  er  
+					ebenso  lange  ein  Fleischklumpen[mudghah].  Dann  wird  der  Engel  zu ihm entsandt und haucht ihm die Seele [ar-Ruh] 
+					ein und ihm werden vier Dinge befohlen: das Schreiben  seiner  Versorgung[ar-rizq],  seiner  Frist[al-ajal],  
+					seiner  Taten[al-amal]und  ob  er ungl&uuml;cklich sein wird oder gl&uuml;cklich. Bei  Gott,  ausser  dem  es  keine anbetungsw&uuml;rdige  
+					Gottheit  gibt,  jemand  von  euch  vollbringt wahrlich die Taten der Leute des Paradieses[ahlul-jannah], bis zwischen ihm
+					und ihr nur eine Elle  ist,  dann  holt  ihn  das  Buch  ein  und  er  vollbringt  die  Taten  der  Leute  
+					der  H&ouml;lle [ahlun-naar] und tritt so darin ein. Und jemand von euch vollbringt wahrlich die Taten der Leute der H&ouml;lle, 
+					bis zwischen ihm und ihr nur eine Elle ist, dann holt ihn das Buch ein und er vollbringt die Taten der Leute des Paradieses 
+					und tritt so darin ein.&quot;
+
+				</p>
+				<a href="http://google.ch">
+					Search
+				</a>
+			</div>
+		</div>
+		<footer>
+			&copy; Mislim Dauti
+		</footer>
+	</body>
+</html>
