@@ -9,7 +9,7 @@
 <div id="content-wrapper">
 	<div id="content1">Bild, 
 	Formular,
-	
+	<p> Asselam Alejkum </p>
 	<p> Hello World</p>
 	
 	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed 
